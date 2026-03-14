@@ -53,7 +53,7 @@
             key-positions = <0 1>;
         };
 
-        tab {
+        CONBO_TAB {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
         };
