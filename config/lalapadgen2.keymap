@@ -57,6 +57,21 @@
             bindings = <&kp TAB>;
             key-positions = <10 11>;
         };
+
+        COMBO_Y {
+            bindings = <&kp Y>;
+            key-positions = <4 3>;
+        };
+
+        COMBO_H {
+            bindings = <&kp H>;
+            key-positions = <13 14>;
+        };
+
+        COMBO_N {
+            bindings = <&kp N>;
+            key-positions = <23 24>;
+        };
     };
 
     keymap {
