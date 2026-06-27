@@ -1,10 +1,10 @@
-if SHIELD_LALAPADGEN2_LEFT
+if SHIELD_LALAPADGEN2_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "LalapadGen2"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default n
+    default y
 
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
     default 1
@@ -13,8 +13,6 @@ config BT_MAX_CONN
     default 5
 
 endif
-
-
 
 if SHIELD_LALAPADGEN2_LEFT || SHIELD_LALAPADGEN2_RIGHT
 
