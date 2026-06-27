@@ -1,6 +1,6 @@
 #include "lalapadgen2.dtsi"
 
-&default_transform {
+&trackpad_split_R {
     col-offset = <6>;
 };
 
@@ -19,6 +19,7 @@
     status = "okay";
     device = <&iqs9151>;
 };
-&trackpad_listener_L {
-    status = "okay";
+&trackpad_split_L {
+    status = "disabled";
+    device = <&iqs9151>;
 };
