@@ -1,5 +1,6 @@
-if SHIELD_LALAPADGEN2_RIGHT
+# 右の設定を左に移すだけで解決します
 
+if SHIELD_LALAPADGEN2_LEFT
 config ZMK_KEYBOARD_NAME
     default "LalapadGen2"
 
@@ -11,12 +12,17 @@ config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
     
 config BT_MAX_CONN
     default 5
+endif
 
+if SHIELD_LALAPADGEN2_RIGHT
+config ZMK_KEYBOARD_NAME
+    default "LalapadGen2"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
 endif
 
 if SHIELD_LALAPADGEN2_LEFT || SHIELD_LALAPADGEN2_RIGHT
-
 config ZMK_SPLIT
     default y
-
 endif
